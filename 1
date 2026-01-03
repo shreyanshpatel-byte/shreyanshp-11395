@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// Function definition to print numbers
+void printNumbers(int n) {
+    // Check if the input is valid
+    if (n < 1) {
+        printf("Please enter a number greater than 0.\n");
+        return;
+    }
+
+    printf("Numbers from 1 to %d are:\n", n);
+    
+    // Loop from 1 to N
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", i);
+    }
+    
+    printf("\n"); // Print a new line at the end for clean formatting
+}
+
+int main() {
+    int N;
+
+    // Ask the user for input
+    printf("Enter the value of N: ");
+    scanf("%d", &N);
+
+    // Call the function
+    printNumbers(N);
+
+    return 0;
+}
